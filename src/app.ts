@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 
-db(false);
+db(true);
 
 app.use('/api/v1', indexRoute);
 
